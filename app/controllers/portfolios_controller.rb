@@ -1,6 +1,6 @@
 class PortfoliosController < ApplicationController
-	def index
-		
+	
+	def index	
 	 @portfolio_items = Portfolio.all
 	end
 
