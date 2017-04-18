@@ -21,7 +21,7 @@ puts "5 skills created"
 
 8.times do |portfolio_item|
 	Portfolio.create!(
-		title: "my title #{portfolio_item}",
+		title: "Portfolio title #{portfolio_item}",
 		subtitle: "Ruby on Rails",
 		body: "Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus.",
 		main_image: "http://placehold.it/400x600" ,
@@ -31,7 +31,7 @@ end
 
 1.times do |portfolio_item|
 	Portfolio.create!(
-		title: "my title #{portfolio_item}",
+		title: "Portfolio title #{portfolio_item}",
 		subtitle: "Angular",
 		body: "Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus.",
 		main_image: "http://placehold.it/400x600" ,
