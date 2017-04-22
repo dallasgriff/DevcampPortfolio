@@ -69,3 +69,4 @@ class PortfoliosController < ApplicationController
   end
 
 end
+
