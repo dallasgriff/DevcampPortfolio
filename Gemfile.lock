@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/dallasgriff/dallas_view_tool
+  revision: 7bcec324c89b9a4848954bbbdb0ae2495f80984f
+  specs:
+    dallas_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -185,6 +191,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
+  dallas_view_tool!
   devise (~> 4.2, >= 4.2.1)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
