@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   before_action :set_copyright
 
   def set_copyright
-  	@copyright = DallasViewTool::Renderer.copyright 'Dallas Griffiths' | 'All rights reserved'
+  	@copyright = DallasViewTool::Renderer.copyright 'Dallas Griffiths', 'All rights reserved'
   end	
 end
 
