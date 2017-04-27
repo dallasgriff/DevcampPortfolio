@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
@@ -23,11 +25,23 @@
           <%= yield %>
 
           <%= render "shared/application_footer" %>
+         
+          <%= copyright %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= render "shared/nav", location: 'top' %>
+
+    <%= login_helper %>
+
 
           <% source_helper("application") %>
+
 
         </div>
       </div>
     </div>
+    <%= copyright_generator %>    
   </body>
 </html>
