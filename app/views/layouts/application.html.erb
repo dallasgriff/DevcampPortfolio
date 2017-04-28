@@ -22,22 +22,17 @@
 
           <%= render "shared/application_nav" %>
 
+          <%= login_helper %>
+
           <%= yield %>
 
           <%= render "shared/application_footer" %>
          
           <%= copyright %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/nav", location: 'top' %>
-
-    <%= login_helper %>
-
+          <%= render "shared/nav", location: 'top' %>
 
           <% source_helper("application") %>
-
 
         </div>
       </div>
