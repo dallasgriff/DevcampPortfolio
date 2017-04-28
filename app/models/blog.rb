@@ -8,11 +8,7 @@ class Blog < ApplicationRecord
 	belongs_to :topic
 
 	def self.special_blogs
-<<<<<<< HEAD
-		all
-=======
 		all 
->>>>>>> rubygem
 	end
 
 	def self.featured_blogs
