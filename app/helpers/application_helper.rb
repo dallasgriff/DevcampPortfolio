@@ -59,4 +59,13 @@ module ApplicationHelper
     "active" if current_page? path
   end
 
+  def alerts
+    alert_generator alert
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Dallas Griffiths Portfolio", sticky: false)
+  end
+
+
 end
