@@ -1,16 +1,27 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
-    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <p>We learn best through teaching, so I write with the intent to gain better understanding.  I have a comments section enabled for each blog. (You need to register and/or log in to comment).  Please let me know if anything is incorrect!</p>
+  </div>
+
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
   </div>
 
   <div class="sidebar-module">
-    <h4>Elsewhere</h4>
+    <h4>Connect with me</h4>
     <ol class="list-unstyled social-links">
       <li><a href="https://github.com/dallasgriff"><%= fa_icon "github" %></a></li>
+      <li><a href="https://linkedin.com/in/dallasgriff/"><%= fa_icon "linkedin" %></a></li>
       <li><a href="https://www.instagram.com/dallasgriff/"><%= fa_icon "instagram" %></a></li>
       <li><a href="https://www.facebook.com/dallasgriff"><%= fa_icon "facebook" %></a></li>
       <li><a href="https://twitter.com/dallasgriff"><%= fa_icon "twitter" %></a></li>
+      <li><a href="https://pinterest.com/dallasgriff"><%= fa_icon "pinterest" %></a></li>
     </ol>
   </div>
 </div>
