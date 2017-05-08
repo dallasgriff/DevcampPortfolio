@@ -1,6 +1,6 @@
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
-  	indentified_by :current_user
+  	identified_by :current_user
 
   	def guest_user
   	  guest = Guest_user.new
