@@ -226,7 +226,7 @@ body {
 .app-card-contact {
   color: black;
   text-align: left;
-  width: 40rem;
+  width: 50rem;
   margin: 0 auto;
   float: none;
 }
@@ -236,16 +236,23 @@ body {
   margin: auto;
 }
 
+.app-card-contact a {
+  color: blue;
+}
+
 .app-card-container {
+  margin: 0 auto;
   color: black;
   text-align: left;
-  width: 50rem;
+  font-size: 24;
+  text-shadow: none;
+  width: 90rem;
   margin: 0 auto;
   float: none;
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 60px;
   margin: auto;
 }
 
@@ -260,4 +267,8 @@ body {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.profile-image {
+  size: 5%;
 }

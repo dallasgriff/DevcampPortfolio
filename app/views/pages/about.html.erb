@@ -2,26 +2,43 @@
   <div class="card">
     <h1>About Me</h1>
     	<div class="row">
-    	  <div class="col-md-4 col-sm-4">
-            <img width="100%" alt="Profile Image" class="profile-img" src="dalison.jpg">
-<!-- 
-        <div class="skills">
-        </div>
-         -->
+    	  <div class="col-md-6">
+            <%= image_tag("dalison.jpg", :alt => "Profile Photo", :class => "col-lg-11 profile-image") %>
           </div>
+          
+          <div class="col-md-6">
+          	<p>I graduated grauduated Cum Laude from UVU with a BA in Behavioral Science, emphasis Psychology. I made the Dean's list 5 of 6 semesters. Yes, I got my four year bachelors degree in two years - and did so while recovering from a traumatic brain injury (TBI).  To learn more about the accident see my blog section titled "TBI".</p>
+
+          	<p></p>
+
+		  </div>
     	</div>
 
 <hr>
 
       <div class="col-md-8">
-		  <h3>Motto:</h3>
-		    <p>Fac Et Spera.   <em>Latin</em>: Do & Hope</p>
-		    <p>My interpretation: Work & Faith</p>
+		    
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#motto"
+            aria-expanded="false"
+            aria-controler="motto"
+          >
+            Motto
+          </button>
 
-<hr>
-
-		    <h3>Mission:</h3>
-		    	<p>Help others reach their full potential.  </p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mission"
+            aria-expanded="false"
+            aria-controler="mission"
+          >
+            Mission
+          </button>
 
           <button
             class="btn btn-primary"
@@ -44,30 +61,90 @@
           >
             Education
           </button>
-        </p>
 
         <p>
+          <div class="collapse" id="motto">
+            <div class="card card-block">
+              <p>Fac Et Spera = <em>Latin:</em> Do and Hope</p>
+              <p>My translation = Work and Faith</p>
+            </div>
+          </div>
+
+          <div class="collapse" id="mission">
+            <div class="card card-block">
+              Help others reach their full potential
+            </div>
+          </div>
+
           <div class="collapse" id="jobHistory">
+
             <div class="card card-block">
-              Fidelity Investments
+              <div class="row">
+                <div class="col-md-3">
+                  <img width="100%" alt="fid" class="fid.img" src="/assets/Fidelity.png">
+                </div>
+                <div class="col-md-9">
+                  <h3>Fidelity Investments</h3>
+                  <h5>Stock Broker (2015-2017)</h5>
+        	        <p>Collaborated within a special team in Brokerage Operations to identify and improve process inefficiencies. Presented and pushed change. I understand money and am always thinking about the bottom line. I believe my financial background, paired with my technical training, will help me bring a different perspective to a development role.</p>
+                </div>
+              </div>
             </div>
+
             <div class="card card-block">
-              Cambridge Financial
+              <div class="row">
+                <div class="col-md-3">
+                  <img width="100%" alt="cambridge" class="cambridge.img" src="/assets/cambridge.jpg">
+                </div>
+                  <div class="col-md-9">
+                    <h3>Cambridge Financial</h3>
+            	      <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+            	  </div>
+              </div>
             </div>
+
             <div class="card card-block">
-              Champion Fitness
+              <div class="row">
+                <div class="col-md-3">
+                  <img width="100%" alt="champion" class="champion.img" src="/assets/champion.jpg">
+                </div>
+                  <div class="col-md-9">
+                    <h3>Champion Fitness</h3>
+            	      <p>Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+            	  </div>
+              </div>
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              Bottega Tech
+              <div class="row">
+                <div class="col-md-3">
+                  <img width="100%" height="100%" alt="bottega" class="bottega.img" src="/assets/bottega.jpg">
+                </div>
+                  <div class="col-md-9">
+                    <h3>Bottega Tech</h3>
+            	    <h5>Career Acceleration.</h5>
+            	      <p>Ruby, CSS, HTML, Javascript</p>
+            	  </div>
+              </div>
             </div>
-            <div class="card card-block">
-              Westminster College
+
+             <div class="card card-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <img width="100%" alt="fid" class="uvu.img" src="/assets/uvu.jpg">
+                </div>
+                  <div class="col-md-9">
+                    <h3>Utah Valley University</h3>
+                    <h5>Bachelor of Arts, Behavioral Science - Psychology (2011)</h5>
+
+            	      <p>I graduated grauduated Cum Laude from UVU with a BA in Behavioral Science, emphasis Psychology. I made the Dean's list 5 of 6 semesters. Yes, I got my four year bachelors degree in two years - and did so while recovering from a traumatic brain injury (TBI). To learn more about the accident see my blog section titled "TBI".</p>
+                  </div>
+              </div>
             </div>
-            <div class="card card-block">
-              Utah Valley University
+
+
             </div>
           </div>
         </p>
