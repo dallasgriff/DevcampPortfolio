@@ -1,23 +1,87 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+    	<div class="row">
+    	  <div class="col-md-4 col-sm-4">
+            <img width="100%" alt="Profile Image" class="profile-img" src="dalison.jpg">
+<!-- 
+        <div class="skills">
+        </div>
+         -->
+          </div>
+    	</div>
 
 <hr>
 
-<div class="row">
-	<div class="col-md-4">
-		<%= image_tag "dalison.jpg", width:"300", alt:"Profile Image" %>
-	</div>
-
-	<div class="col-md-8">
-	  <h3>Motto:</h3>
-	    <p>Fac Et Spera</p>
-	    <p>Latin: Do & Hope</p>
-	    <p>My interpretation: Work & Faith</p>
+      <div class="col-md-8">
+		  <h3>Motto:</h3>
+		    <p>Fac Et Spera.   <em>Latin</em>: Do & Hope</p>
+		    <p>My interpretation: Work & Faith</p>
 
 <hr>
-<hr>
-	    <h3>Mission:</h3>
-	    <p>I want to help others reach their potential.  </p>
 
-	</div>
+		    <h3>Mission:</h3>
+		    	<p>Help others reach their full potential.  </p>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Fidelity Investments
+            </div>
+            <div class="card card-block">
+              Cambridge Financial
+            </div>
+            <div class="card card-block">
+              Champion Fitness
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Bottega Tech
+            </div>
+            <div class="card card-block">
+              Westminster College
+            </div>
+            <div class="card card-block">
+              Utah Valley University
+            </div>
+          </div>
+        </p>
+
+<!--     <ol class="list-unstyled social-links">
+	      <a href="https://github.com/dallasgriff"><%= fa_icon "github" %></a></li>
+	      <a href="https://linkedin.com/in/dallasgriff/"><%= fa_icon "linkedin" %></a></li>
+	      <a href="https://www.instagram.com/dallasgriff/"><%= fa_icon "instagram" %></a></li>
+	      <a href="https://www.facebook.com/dallasgriff"><%= fa_icon "facebook" %></a></li>
+	      <a href="https://twitter.com/dallasgriff"><%= fa_icon "twitter" %></a></li>
+	      <a href="https://pinterest.com/dallasgriff"><%= fa_icon "pinterest" %></a></li>
+	    </ol> -->
+
+      </div>
+    </div>
+  </div>
 </div>
-

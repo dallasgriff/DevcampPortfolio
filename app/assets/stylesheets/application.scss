@@ -223,15 +223,41 @@ body {
 }
 
 
+.app-card-contact {
+  color: black;
+  text-align: left;
+  width: 40rem;
+  margin: 0 auto;
+  float: none;
+}
 
+.app-card-contact > .card {
+  padding: 40px;
+  margin: auto;
+}
 
+.app-card-container {
+  color: black;
+  text-align: left;
+  width: 50rem;
+  margin: 0 auto;
+  float: none;
+}
 
+.app-card-container > .card {
+  padding: 40px;
+  margin: auto;
+}
 
+.profile-img {
+  border: 1px solid grey;
+}
 
+.app-card-container a {
+  color: blue;
+}
 
-
-
-
-
-
-
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
